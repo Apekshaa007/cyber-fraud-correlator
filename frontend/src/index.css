@@ -142,6 +142,39 @@ body {
   letter-spacing: 0.05em;
 }
 
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.nav-tab-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--color-text-secondary);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 0.375rem 0.875rem;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  transition: all 0.15s ease;
+}
+
+.nav-tab-btn:hover {
+  color: var(--color-text-primary);
+  background-color: var(--color-surface-subtle);
+}
+
+.nav-tab-btn.active {
+  color: var(--color-primary);
+  background-color: var(--color-surface-subtle);
+  border-color: var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
 .navbar-actions {
   display: flex;
   align-items: center;
