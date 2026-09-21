@@ -6,7 +6,7 @@ import { INITIAL_EVIDENCE_LIST, formatBytes } from '../../services/api';
 import './UploadPage.css';
 
 export const UploadPage: React.FC = () => {
-  const [caseId, setCaseId] = useState<string>('CASE_2026_001');
+  const [caseId, setCaseId] = useState<string>('DEMO-CASE-001');
   const [evidenceList, setEvidenceList] = useState<EvidenceItem[]>(INITIAL_EVIDENCE_LIST);
 
   const handleEvidenceUploaded = (newEvidence: EvidenceItem) => {

@@ -1,6 +1,7 @@
-import type { InvestigationReportData } from '../types';
-import { MOCK_FINDINGS } from './findingsData';
-import { MOCK_TIMELINE_EVENTS } from './timelineData';
+import type { InvestigationReportData } from '../types/index.ts';
+import { MOCK_FINDINGS } from './findingsData.ts';
+import { MOCK_TIMELINE_EVENTS } from './timelineData.ts';
+
 
 export const MOCK_REPORT_DATA: InvestigationReportData = {
   caseInfo: {
