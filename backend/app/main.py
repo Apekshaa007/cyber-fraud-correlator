@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from app.config import settings
-from app.routers import evidence
+from app.routers import cases, evidence
 
 app = FastAPI(
     title=settings.PROJECT_NAME,
@@ -10,6 +10,7 @@ app = FastAPI(
 )
 
 app.include_router(evidence.router, prefix=settings.API_PREFIX)
+app.include_router(cases.router, prefix=settings.API_PREFIX)
 
 
 @app.get(f"{settings.API_PREFIX}/health")
