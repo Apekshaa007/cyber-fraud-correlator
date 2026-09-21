@@ -1,3 +1,4 @@
+from pathlib import Path
 from pydantic import BaseModel
 
 
@@ -6,6 +7,7 @@ class Settings(BaseModel):
     VERSION: str = "0.1.0"
     API_PREFIX: str = "/api"
     DEBUG: bool = False
+    STORAGE_DIR: Path = Path("storage/evidence")
 
 
 settings = Settings()
